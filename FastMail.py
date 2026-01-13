@@ -11,8 +11,7 @@ def enviar_correo_gui():
     # Lee desde la primera línea hasta el final
     mensaje = txt_msg.get("1.0", tk.END)
     destinatario = entry_dest.get()
-    kit.send_mail(remitente, password, asunto, mensaje, destinatario)
-
+    
     # Validación básica
     if not remitente or not password or not destinatario:
         messagebox.showwarning("Campos vacíos",
